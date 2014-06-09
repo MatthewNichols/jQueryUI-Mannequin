@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Accordion</h2>
+        <p>
+            @{Html.RenderPartial("Widgets/Accordion");}
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Autocomplete</h2>
+        <p>
+            @{Html.RenderPartial("Widgets/Autocomplete");}
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Buttons</h2>
+        <p>
+            @{Html.RenderPartial("Widgets/Button");}
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Datepicker</h2>
+        <p>
+            @{Html.RenderPartial("Widgets/Datepicker");}
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Autocomplete</h2>
+        <p>
+            @{Html.RenderPartial("Widgets/Dialog");}
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Menu</h2>
+        <p>
+            @{Html.RenderPartial("Widgets/Menu");}
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Progressbar</h2>
+        <p>
+            @{Html.RenderPartial("Widgets/Progressbar");}
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Slider</h2>
+        <p>
+            @{Html.RenderPartial("Widgets/Slider");}
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Spinner</h2>
+        <p>
+            @{Html.RenderPartial("Widgets/Spinner");}
+        </p>
+    </div>
+</div>
+
+@section scripts
+{
+    <script src="~/Scripts/Pages/Home.js"></script>
+}
