@@ -41,7 +41,15 @@
 
     $("#datepicker").datepicker();
 
-    $("#dialog").dialog();
+    var dialogHeader$ = $('#dialogHeader');
+    $("#dialog").dialog({
+        position: {
+            of: dialogHeader$,
+            my: "left top+40px",
+            at: "left bottom"
+
+        }
+    });
 
     $("#menu").menu();
 

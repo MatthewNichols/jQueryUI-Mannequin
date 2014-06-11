@@ -2,26 +2,6 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Accordion</h2>
-        <p>
-            @{Html.RenderPartial("Widgets/Accordion");}
-        </p>
-    </div>
-    <div class="col-md-4">
-        <h2>Autocomplete</h2>
-        <p>
-            @{Html.RenderPartial("Widgets/Autocomplete");}
-        </p>
-    </div>
-    <div class="col-md-4">
-        <h2>Buttons</h2>
-        <p>
-            @{Html.RenderPartial("Widgets/Button");}
-        </p>
-    </div>
-</div>
 
 <div class="row">
     <div class="col-md-4">
@@ -31,7 +11,7 @@
         </p>
     </div>
     <div class="col-md-4">
-        <h2>Autocomplete</h2>
+        <h2 id="dialogHeader">Dialog</h2>
         <p>
             @{Html.RenderPartial("Widgets/Dialog");}
         </p>
@@ -64,6 +44,28 @@
         </p>
     </div>
 </div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Accordion</h2>
+        <p>
+            @{Html.RenderPartial("Widgets/Accordion");}
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Autocomplete</h2>
+        <p>
+            @{Html.RenderPartial("Widgets/Autocomplete");}
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Buttons</h2>
+        <p>
+            @{Html.RenderPartial("Widgets/Button");}
+        </p>
+    </div>
+</div>
+
 
 @section scripts
 {
